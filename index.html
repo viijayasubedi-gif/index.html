@@ -313,7 +313,7 @@
                 let fileInput = document.getElementById('photoFile');
                 if (fileInput && fileInput.files && fileInput.files.length > 0) {
                     // Extract file extension safely from the first file object
-                    let originalName = fileInput[0].name;
+                    let originalName = fileInput.files[0].name;
                     let ext = originalName.substring(originalName.lastIndexOf('.')).toLowerCase();
                     if (!ext || ext.length > 5) ext = ".jpg"; 
 
